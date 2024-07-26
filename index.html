@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>on-prem-install-TATA.md</title>
+<title>README.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -367,6 +367,12 @@ code {
   </script>
 <h1 id="pickel-signage-on-premise-installation-for-tata">Pickel Signage On-premise installation for Tata</h1>
 <p>NOTE: this guide assumes that you already have Pickcel's main On-premise setup guide with you.</p>
+<p>update list of available package</p>
+<pre class="hljs"><code><div>sudo apt update
+</div></code></pre>
+<p>install the following:</p>
+<pre class="hljs"><code><div>sudo apt install curl net-tools unzip
+</div></code></pre>
 <p>make sure that Docker and Node.js are installed.</p>
 <pre class="hljs"><code><div>docker --version
 node --version
@@ -383,8 +389,6 @@ node --version
 <p>you should get an output like this:</p>
 <p><img src="./img/ls-ss.png" alt="ls zip file download verify"></p>
 <p>now unzip this file like this:</p>
-<pre class="hljs"><code><div>sudo apt-get install unzip
-</div></code></pre>
 <pre class="hljs"><code><div>unzip signage-on-premise-v4.zip
 </div></code></pre>
 <p>this will take some time. once this is done, it will create a new directory (folder) called <em>signage-on-premise-v4</em>.</p>
