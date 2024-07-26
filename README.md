@@ -2,6 +2,18 @@
 
 NOTE: this guide assumes that you already have Pickcel's main On-premise setup guide with you.
 
+update list of available package
+
+```bash
+sudo apt update
+```
+
+install the following:
+
+```bash
+sudo apt install curl net-tools unzip
+```
+
 make sure that Docker and Node.js are installed.
 
 ```bash
@@ -13,7 +25,6 @@ we were already able to install Docker and Node in their system last time so we'
 
 in case you want to install the two again, follow the Docker & Node.js installation steps mentioned in our main installation document.
 
-
 now download the on-premise setup zip file by running the following command:
 
 ```bash
@@ -23,6 +34,7 @@ curl -O https://pickceldev.s3.ap-south-1.amazonaws.com/onpremise/signage-on-prem
 this will take some time depending on the internet speed.
 
 once the file is downloaded, you will be able to use the terminal again. to verify whether the download was successful, run
+
 ```bash
 ls -l
 ```
@@ -32,9 +44,6 @@ you should get an output like this:
 ![ls zip file download verify](./img/ls-ss.png)
 
 now unzip this file like this:
-```bash
-sudo apt-get install unzip
-```
 
 ```bash
 unzip signage-on-premise-v4.zip
