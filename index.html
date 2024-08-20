@@ -367,6 +367,7 @@ code {
   </script>
 <h1 id="pickel-signage-on-premise-installation-for-tata">Pickel Signage On-premise installation for Tata</h1>
 <p>NOTE: this guide assumes that you already have Pickcel's main On-premise setup guide with you.</p>
+<p>You need internet access for the following steps. I will explicitly mention when you don't need internet access.</p>
 <p>update list of available package</p>
 <pre class="hljs"><code><div>sudo apt update
 </div></code></pre>
@@ -377,7 +378,8 @@ code {
 <pre class="hljs"><code><div>docker --version
 node --version
 </div></code></pre>
-<p>we were already able to install Docker and Node in their system last time so we're going with this prerequisite.</p>
+<p>If you get the version of both, then you're good to go. If not, then you need to install them, for which you obviously need internet access. Check the main installation document for the steps to install Docker and Node.js.</p>
+<p>But since we were already able to install Docker and Node in their system last time so we're going with this prerequisite.</p>
 <p>in case you want to install the two again, follow the Docker &amp; Node.js installation steps mentioned in our main installation document.</p>
 <p>now download the on-premise setup zip file by running the following command:</p>
 <pre class="hljs"><code><div>curl -O https://pickceldev.s3.ap-south-1.amazonaws.com/onpremise/signage-on-premise-v4.zip
@@ -393,7 +395,7 @@ node --version
 </div></code></pre>
 <p>this will take some time. once this is done, it will create a new directory (folder) called <em>signage-on-premise-v4</em>.</p>
 <p><strong>NOTE: from here on, no internet is required to complete the setup. just a network.</strong></p>
-<p><strong>NOTE: before going forward, keep the IP address with you. it will be required.</strong></p>
+<p><strong>NOTE: before going forward, keep the static IP address with you. it will be required.</strong></p>
 <p>go into signage-on-premise-v4's setup directory.</p>
 <pre class="hljs"><code><div><span class="hljs-built_in">cd</span> signage-on-premise-v4/setup/
 </div></code></pre>

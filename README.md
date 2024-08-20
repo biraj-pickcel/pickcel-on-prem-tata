@@ -2,6 +2,8 @@
 
 NOTE: this guide assumes that you already have Pickcel's main On-premise setup guide with you.
 
+You need internet access for the following steps. I will explicitly mention when you don't need internet access.
+
 update list of available package
 
 ```bash
@@ -21,7 +23,9 @@ docker --version
 node --version
 ```
 
-we were already able to install Docker and Node in their system last time so we're going with this prerequisite.
+If you get the version of both, then you're good to go. If not, then you need to install them, for which you obviously need internet access. Check the main installation document for the steps to install Docker and Node.js.
+
+But since we were already able to install Docker and Node in their system last time so we're going with this prerequisite.
 
 in case you want to install the two again, follow the Docker & Node.js installation steps mentioned in our main installation document.
 
@@ -53,7 +57,7 @@ this will take some time. once this is done, it will create a new directory (fol
 
 **NOTE: from here on, no internet is required to complete the setup. just a network.**
 
-**NOTE: before going forward, keep the IP address with you. it will be required.**
+**NOTE: before going forward, keep the static IP address with you. it will be required.**
 
 go into signage-on-premise-v4's setup directory.
 
